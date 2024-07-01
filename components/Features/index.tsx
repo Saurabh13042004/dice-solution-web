@@ -13,11 +13,9 @@ const Feature = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "SOLID FEATURES",
-              subtitle: "Core Features of Solid",
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.`,
+              title: "What We Provide",
+              subtitle: "Look No further Than DICE",
+              description: `At Dice Solutions, we offer a full suite of digital services tailored to your business needs, from AI-powered chatbots to custom CMS development. Our diverse expertise ensures you receive the most effective and innovative solutions to elevate your business.`,
             }}
           />
           {/* <!-- Section Title End --> */}
