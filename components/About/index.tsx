@@ -6,7 +6,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      {/* <!-- ===== About Start ===== --> */}
+      {/* ===== About Start ===== */}
       <section className="overflow-hidden pb-20 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
           <div className="flex items-center gap-8 lg:gap-32.5">
@@ -16,7 +16,6 @@ const About = () => {
                   opacity: 0,
                   x: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   x: 0,
@@ -47,7 +46,6 @@ const About = () => {
                   opacity: 0,
                   x: 20,
                 },
-
                 visible: {
                   opacity: 1,
                   x: 0,
@@ -60,37 +58,38 @@ const About = () => {
               className="animate_right md:w-1/2"
             >
               <span className="font-medium uppercase text-black dark:text-white">
-                <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
+                <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white">
                   New
                 </span>{" "}
                 SaaS Boilerplate for Next.js
               </span>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                A Complete Solution for
+                A Complete Solution for{" "}
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
                   SaaS Startup
                 </span>
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                At Dice Solutions, we provide a robust and comprehensive platform for your SaaS startup. Our solutions are designed to scale and adapt to your business needs, ensuring a seamless experience for your customers.
               </p>
 
               <div className="mt-7.5 flex items-center gap-5">
-                <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
+                <div className="flex h-15 w-15 items-center justify-center rounded-full border border-stroke dark:border-strokedark dark:bg-blacksection">
                   <p className="text-metatitle2 font-semibold text-black dark:text-white">
                     01
                   </p>
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                    React 18, Next.js 13 and TypeScript
+                    React 18, Next.js 13, and TypeScript
                   </h3>
-                  <p>Ut ultricies lacus non fermentum ultrices.</p>
+                  <p>
+                    Leverage the latest technologies to build robust and scalable applications.
+                  </p>
                 </div>
               </div>
               <div className="mt-7.5 flex items-center gap-5">
-                <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
+                <div className="flex h-15 w-15 items-center justify-center rounded-full border border-stroke dark:border-strokedark dark:bg-blacksection">
                   <p className="text-metatitle2 font-semibold text-black dark:text-white">
                     02
                   </p>
@@ -99,16 +98,18 @@ const About = () => {
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
                     Fully Customizable
                   </h3>
-                  <p>consectetur adipiscing elit fermentum ultricies.</p>
+                  <p>
+                    Our platform is designed to be fully customizable to meet your unique business requirements.
+                  </p>
                 </div>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
-      {/* <!-- ===== About End ===== --> */}
+      {/* ===== About End ===== */}
 
-      {/* <!-- ===== About Two Start ===== --> */}
+      {/* ===== About Two Start ===== */}
       <section>
         <div className="mx-auto max-w-c-1235 overflow-hidden px-4 md:px-8 2xl:px-0">
           <div className="flex items-center gap-8 lg:gap-32.5">
@@ -118,7 +119,6 @@ const About = () => {
                   opacity: 0,
                   x: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   x: 0,
@@ -134,14 +134,13 @@ const About = () => {
                 Launch Your SaaS Fast
               </h4>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                Packed with All Essential {"   "}
+                Packed with All Essential{" "}
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
                   Integrations
                 </span>
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                Our platform comes with all the essential integrations you need to launch your SaaS product quickly and efficiently. From payment gateways to third-party APIs, we have you covered.
               </p>
               <div>
                 <a
@@ -168,7 +167,6 @@ const About = () => {
                   opacity: 0,
                   x: 20,
                 },
-
                 visible: {
                   opacity: 1,
                   x: 0,
@@ -196,7 +194,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* <!-- ===== About Two End ===== --> */}
+      {/* ===== About Two End ===== */}
     </>
   );
 };

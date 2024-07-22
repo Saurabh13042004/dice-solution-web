@@ -12,15 +12,8 @@ const CTA = () => {
           <div className="flex flex-wrap gap-8 md:flex-nowrap md:items-center md:justify-between md:gap-0">
             <motion.div
               variants={{
-                hidden: {
-                  opacity: 0,
-                  x: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                },
+                hidden: { opacity: 0, x: -20 },
+                visible: { opacity: 1, x: 0 },
               }}
               initial="hidden"
               whileInView="visible"
@@ -29,25 +22,16 @@ const CTA = () => {
               className="animate_left md:w-[70%] lg:w-1/2"
             >
               <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4">
-                Join With Us Today & Increase Your Productivity
+                Join DICE Solutions Today & Boost Your Business
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor eros. Donec vitae tortor lacus. Phasellus
-                aliquam ante in maximus.
+                At DICE Solutions, we specialize in building scalable websites and mobile applications. Our team is dedicated to providing you with the latest technologies to enhance your user experience and ensure seamless functionality.
               </p>
             </motion.div>
             <motion.div
               variants={{
-                hidden: {
-                  opacity: 0,
-                  x: 20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                },
+                hidden: { opacity: 0, x: 20 },
+                visible: { opacity: 1, x: 0 },
               }}
               initial="hidden"
               whileInView="visible"

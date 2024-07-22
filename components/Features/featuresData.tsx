@@ -1,3 +1,5 @@
+// featuresData.js
+
 import { Feature } from "@/types/feature";
 
 const featuresData: Feature[] = [
@@ -6,42 +8,42 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-01.svg",
     title: "E-commerce Solutions",
     description:
-      " Develop and integrate comprehensive e-commerce platforms, complete with payment gateways, inventory management, and user-friendly interfaces.",
+      "Develop and integrate comprehensive e-commerce platforms, complete with payment gateways, inventory management, and user-friendly interfaces.",
   },
   {
     id: 2,
     icon: "/images/icon/icon-02.svg",
     title: "SEO and Digital Marketing",
     description:
-      " Provide expert SEO services and digital marketing strategies to boost online visibility and drive organic traffic to business websites.",
+      "Boost your online visibility with our expert SEO services and strategic digital marketing solutions.",
   },
   {
     id: 3,
     icon: "/images/icon/icon-03.svg",
     title: "Custom CMS Development",
     description:
-      "Offer tailored Content Management Systems to streamline website management, ensuring businesses have complete control over their digital content.",
+      "Tailored Content Management Systems to streamline your website management and give you complete control over your digital content.",
   },
   {
     id: 4,
     icon: "/images/icon/icon-04.svg",
     title: "AI-Powered Chatbots",
     description:
-      "Enhance customer interaction and support with intelligent, customizable chatbots that operate 24/7.",
+      "Enhance customer interaction with intelligent, customizable chatbots that provide 24/7 support.",
   },
   {
     id: 5,
     icon: "/images/icon/icon-05.svg",
     title: "Data Analytics and Insights",
     description:
-      "Implement advanced data analytics tools to help businesses understand customer behavior, optimize operations, and make data-driven decisions.",
+      "Leverage advanced data analytics tools to understand customer behavior, optimize operations, and make informed decisions.",
   },
   {
     id: 6,
     icon: "/images/icon/icon-06.svg",
     title: "Cloud Solutions and IT Infrastructure",
     description:
-      " Offer robust cloud computing services and IT infrastructure support to ensure scalability, security, and efficient business operations.",
+      "Ensure scalability, security, and efficiency with our robust cloud computing services and IT infrastructure support.",
   },
 ];
 

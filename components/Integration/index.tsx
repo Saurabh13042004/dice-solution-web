@@ -13,10 +13,9 @@ const Integration = () => {
             headerInfo={{
               title: `INTEGRATIONS`,
               subtitle: `Remotely Maintain Your Data, From Anywhere, Anytime.`,
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+              description: `Our integration solutions ensure seamless connectivity and real-time data management, allowing you to operate efficiently from anywhere in the world. We partner with leading platforms to provide robust and scalable integrations.`,
             }}
           />
-
           {/* <!-- Section Title End --> */}
         </div>
 
@@ -45,7 +44,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -73,7 +71,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -81,10 +78,19 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true }}
               className="animate_top w-1/6"
-            ></motion.div>
+            >
+              <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
+                <Image
+                  width={50}
+                  height={50}
+                  src="./images/brand/brand-13.svg"
+                  alt="Brand"
+                />
+              </div>
+            </motion.div>
 
             <motion.div
               variants={{
@@ -92,7 +98,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -100,7 +105,7 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.3 }}
               viewport={{ once: true }}
               className="animate_top w-1/6"
             >
@@ -120,7 +125,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -128,7 +132,7 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.4 }}
               viewport={{ once: true }}
               className="animate_top w-1/6"
             >
@@ -141,7 +145,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -149,7 +152,7 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: true }}
               className="animate_top w-1/6"
             >
@@ -169,7 +172,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -177,26 +179,7 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
-            ></motion.div>
-
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.6 }}
               viewport={{ once: true }}
               className="animate_top w-1/6"
             >
@@ -209,7 +192,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -217,7 +199,7 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.7 }}
               viewport={{ once: true }}
               className="animate_top w-1/6"
             >
@@ -237,7 +219,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -245,7 +226,7 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.8 }}
               viewport={{ once: true }}
               className="animate_top w-1/6"
             >
@@ -258,7 +239,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -266,7 +246,7 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.9 }}
               viewport={{ once: true }}
               className="animate_top w-1/6"
             >
@@ -286,7 +266,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -294,7 +273,7 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 1 }}
               viewport={{ once: true }}
               className="animate_top w-1/6"
             >
@@ -307,7 +286,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -315,7 +293,7 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 1.1 }}
               viewport={{ once: true }}
               className="animate_top w-1/6"
             >
