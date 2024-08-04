@@ -30,7 +30,7 @@ const Footer = () => {
               >
                 <a href="index.html" className="relative">
                   <Image
-                    width={110}
+                    width={150}
                     height={80}
                     src="/images/logo/logolight.png"
                     alt="Logo"

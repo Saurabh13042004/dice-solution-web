@@ -52,7 +52,7 @@ const Header = () => {
               alt="logo"
               width={119.03}
               height={30}
-              className=" w-full  dark:hidden "
+              className="dark:hidden "
             />
           </a>
 
