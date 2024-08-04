@@ -5,7 +5,7 @@ import { Testimonial } from "@/types/testimonial";
 export const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "David Smith",
+    name: "Harry kane",
     designation: "Founder @TechInnovate",
     image: image1,
     content:
@@ -13,7 +13,7 @@ export const testimonialData: Testimonial[] = [
   },
   {
     id: 2,
-    name: "John Abraham",
+    name: "Shradha Sharma",
     designation: "CEO @MarketMingle",
     image: image2,
     content:
@@ -21,16 +21,16 @@ export const testimonialData: Testimonial[] = [
   },
   {
     id: 3,
-    name: "David Smith",
-    designation: "Founder @TechInnovate",
+    name: "Priya khanna",
+    designation: "CTO @TechInnovate",
     image: image1,
     content:
       "Our e-commerce platform saw a remarkable improvement in performance and user engagement after collaborating with DICE Solutions. Highly recommend their services.",
   },
   {
     id: 4,
-    name: "John Abraham",
-    designation: "CEO @MarketMingle",
+    name: "Jaskirat Singh",
+    designation: "Co-founder @MarketMingle",
     image: image2,
     content:
       "DICE Solutions provided us with top-notch cloud solutions, ensuring our data is secure and operations are efficient. Their expertise in IT infrastructure is commendable.",

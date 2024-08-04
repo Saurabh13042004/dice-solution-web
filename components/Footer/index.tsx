@@ -32,21 +32,21 @@ const Footer = () => {
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-light.svg"
+                    src="/images/logo/logolight.png"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-dark.svg"
+                    src="/images/logo/logo.png"
                     alt="Logo"
                     className="hidden dark:block"
                   />
                 </a>
 
                 <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Building the future of technology with scalable and reliable software solutions.
                 </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
@@ -56,7 +56,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  dicesolutionsofficial@gmail.com
                 </a>
               </motion.div>
 
@@ -94,26 +94,26 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/#features"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Product
+                        Features
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/#services"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Careers
+                        Services
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/#faq"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Pricing
+                        FAQ
                       </a>
                     </li>
                   </ul>
@@ -168,7 +168,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/support"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Contact Us
@@ -301,7 +301,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} DICE Solutions. All rights reserved
               </p>
             </motion.div>
 
