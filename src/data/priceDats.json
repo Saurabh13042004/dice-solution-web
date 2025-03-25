@@ -1,32 +1,29 @@
 [
     {
         "title": "Starter",
-        "description": "Best option for personal use & for your next project",
-        "price": 29,
-        "devCount": "1 developer",
+        "description": "Ideal for startups and small businesses seeking a simple, effective online presence.",
+        "price": "₹75K",
         "support": "6 months",
         "update": "6 months",
         "action": "Get Started",
-        "link": "/"
+        "link": "/starter"
     },
     {
         "title": "Company",
-        "description": "Relevant for multiple users, extended & premium support",
-        "price": 99,
-        "devCount": "10 developers",
+        "description": "Perfect for growing businesses requiring custom designs and added functionalities.",
+        "price": "₹150K",
         "support": "24 months",
         "update": "24 months",
         "action": "Get Started",
-        "link": "/"
+        "link": "/company"
     },
     {
         "title": "Enterprise",
-        "description": "Best for large scale uses and extended redistribution rights",
-        "price": 499,
-        "devCount": "100+ developers",
+        "description": "Comprehensive, scalable solutions for large organizations with advanced needs.",
+        "price": "Custom",
         "support": "36 months",
         "update": "36 months",
         "action": "Get Started",
-        "link": "/"
+        "link": "/enterprise"
     }
 ]
