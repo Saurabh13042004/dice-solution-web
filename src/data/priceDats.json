@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Starter Package",
+        "description": "Responsive website development with 5-7 pages, SEO optimization, mobile-friendly design, and basic content management system.",
+        "price": "₹49,999",
+        "support": "6 months",
+        "update": "6 months",
+        "action": "Get Started",
+        "link": "/starter"
+    },
+    {
+        "title": "Business Growth",
+        "description": "Custom e-commerce platform or business website with payment gateway integration, advanced CMS, product management, and performance optimization.",
+        "price": "₹99,999",
+        "support": "12 months",
+        "update": "12 months",
+        "action": "Get Started",
+        "link": "/business"
+    },
+    {
+        "title": "Enterprise Solutions",
+        "description": "Full-scale digital transformation with custom web applications, AI integration, advanced analytics, and scalable architecture for large organizations.",
+        "price": "Custom",
+        "support": "24 months",
+        "update": "Lifetime",
+        "action": "Contact Us",
+        "link": "/contact"
+    }
+]

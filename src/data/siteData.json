@@ -1,0 +1,8 @@
+{
+  "title": "Dice Solutions",
+  "description": "Dice Solutions is a simple and minimalistic blog theme for Ghost. It is designed to be a perfect starting point for your blog project.",
+  "image": {
+    "src": "#/raw/main/public/cover.png",
+    "alt": "Dice Solutions"
+  }
+}

@@ -1,0 +1,23 @@
+---
+import Section from "./Section.astro";
+import { Image } from "astro:assets";
+import HeroIlust from "../../assets/pics/hero.svg";
+---
+
+<Section id="home">
+<div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
+    <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
+        <div class="text-left space-y-3">
+            <h1 class="text-4xl font-medium leading-none md:text-6xl text-center md:text-left">Empowering <br> Businesses <br> Online</h1>
+            <p class="mt-6 mb-8 text-lg font-normal leading-7 sm:mb-12 text-center md:text-left md:pr-12">At Dice Solutions, we specialize in web development, e-commerce platforms, app development, and AI-powered solutions. Our mission is to help businesses grow online with innovative, cost-effective tools and services.</p>
+            <div class="w-full justify-center md:justify-start items-center inline-flex">
+                <a href="#contact" class="px-8 py-5 bg-zinc-900 hover:bg-white rounded-2xl text-center text-white hover:text-black border text-xl font-normal leading-7">Get Started Today
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
+        <Image src={HeroIlust} alt="Hero Illustration" loading="eager" />
+    </div>
+</div>
+</Section>

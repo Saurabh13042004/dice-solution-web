@@ -1,0 +1,55 @@
+---
+import { Image } from "astro:assets";
+import Card from "../ui/Card.astro";
+import Section from "./Section.astro";
+
+const cards = [
+  {
+    index: 0,
+    title:
+      "For a local business, we developed a responsive website with advanced features that resulted in a 70% increase in user engagement and a 45% boost in conversion rates.",
+    link: "#",
+  },
+  {
+    index: 1,
+    title:
+      "For an emerging retail brand, we built a custom e-commerce platform that streamlined operations, reduced cart abandonment by 35%, and increased overall sales by 60%.",
+    link: "#",
+  },
+  {
+    index: 2,
+    title:
+      "For a healthcare provider, we created an AI-powered patient management application that reduced administrative workload by 40% and improved patient satisfaction scores by 25%.",
+    link: "#",
+  },
+];
+
+import larrow from "../../assets/icon3.svg";
+import SectionTitle from "../ui/SectionTitle.astro";
+---
+
+<Section id="cases">
+  <SectionTitle
+    sectionTitle="Case Studies"
+    description="Discover how Dice Solutions has helped businesses achieve remarkable results through our innovative development solutions and technical expertise."
+  />
+  <div class="flex flex-col lg:flex-row justify-between rounded-[45px] p-1">
+    {
+      cards.map((card) => (
+        <Card>
+          <div class="flex p-[60px] h-full bg-dark text-gray rounded-[45px] m-[1px]">
+            <div class="flex flex-col gap-5">
+              <p>{card.title}</p>
+              <a href={card.link} class="flex items-center gap-[15px]">
+                <span class="text-green">Learn More</span>
+                <picture>
+                  <Image src={larrow} alt="Arrow pointing up right" />
+                </picture>
+              </a>
+            </div>
+          </div>
+        </Card>
+      ))
+    }
+  </div>
+</Section>
