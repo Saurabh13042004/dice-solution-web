@@ -105,7 +105,9 @@ import decorForm from "../../assets/pics/contact-pic.png";
     var message = document.getElementById("message") as HTMLInputElement;
 
     if (cb1 && cb2) {
-      cb1.checked = true;
+      // Set "Get a Quote" as the default selection
+      cb2.checked = true;
+      message.value = "We're interested in your services! Please contact us";
 
       cb2.addEventListener("change", function () {
         if (cb2.checked) {
@@ -117,6 +119,7 @@ import decorForm from "../../assets/pics/contact-pic.png";
           cb1.checked = true;
         }
       });
+
       cb1.addEventListener("change", function () {
         if (cb1.checked) {
           cb2.checked = false;
