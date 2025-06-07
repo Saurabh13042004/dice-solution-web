@@ -1,17 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
+  experimental: {
+    appDir: true,
   },
-  images: {
-    domains: [],
-    remotePatterns: [
-      // {
-      //   protocol: 'https',
-      //   hostname: 'example.com',
-      //   pathname: '/images/**',
-      // },
-    ],
+  eslint: {
+    // Disabling during builds allows the build to succeed despite ESLint warnings
+    ignoreDuringBuilds: true,
   },
 };
 
