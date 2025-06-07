@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  output: 'export',
   eslint: {
-    // Disabling during builds allows the build to succeed despite ESLint warnings
     ignoreDuringBuilds: true,
   },
+  images: { unoptimized: true },
 };
 
 module.exports = nextConfig;
