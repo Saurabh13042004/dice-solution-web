@@ -4,7 +4,7 @@ import { Check, ArrowRight, Zap, Gift } from 'lucide-react';
 
 export function PricingSection() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="pricing" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-purple-900/20"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
