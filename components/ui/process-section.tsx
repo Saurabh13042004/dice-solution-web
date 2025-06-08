@@ -22,7 +22,7 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id = "process" className="py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-purple-900/30"></div>
       

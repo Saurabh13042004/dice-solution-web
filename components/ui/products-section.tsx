@@ -4,7 +4,7 @@ import { Rocket, Monitor, Zap, Brain, Database, Settings, ArrowRight, CheckCircl
 
 export function ProductsSection() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="products" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-purple-900/30"></div>
       
       {/* Animated Background Elements */}
