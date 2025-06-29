@@ -38,7 +38,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0 cursor-pointer" onClick={() => navigateToPage('/')}>
-            <Logo variant="white" size="lg" />
+            <img src='/1-removebg-preview.png' alt='Logo' className="h-auto w-80" />
           </div>
 
           {/* Desktop Navigation */}
