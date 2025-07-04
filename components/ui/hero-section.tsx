@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, Star, Zap } from 'lucide-react';
+import { ArrowRight, Star, Zap, Play } from 'lucide-react';
 
 export function HeroSection() {
   return (
@@ -16,100 +16,107 @@ export function HeroSection() {
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center space-y-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
-          {/* Badge - First Element */}
-          <div className="flex justify-center mb-8">
-            <div className="backdrop-blur-sm bg-white/10 border border-white/20 rounded-full px-6 py-3 flex items-center gap-3 hover:bg-white/15 transition-all duration-300">
-              <Zap className="w-5 h-5 text-yellow-400" />
+          {/* Left Content */}
+          <div className="space-y-8">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-orange-500/20 backdrop-blur-sm rounded-full border border-orange-500/30">
+              <Zap className="w-5 h-5 text-orange-400" />
               <span className="text-white font-medium">
-                🧠 Built by ex-startup engineers who move fast and build lean
+                Development that performs
               </span>
             </div>
-          </div>
 
-          {/* Main Headline - Second Element */}
-          <div className="space-y-6">
-            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-              Launch MVPs, SaaS &{' '}
-              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                AI Products
-              </span>{' '}
-              — Fast
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              Trusted by 50+ startups to ship production-ready web apps, landing pages, and AI-powered platforms — built for scale, speed, and startup-style execution.
-            </p>
-          </div>
+            {/* Main Headline */}
+            <div className="space-y-6">
+              <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+                Designs that{' '}
+                <span className="text-orange-400">speaks,</span>
+                <br />
+                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  Development
+                </span>
+                <br />
+                that performs
+              </h1>
+              
+              <p className="text-xl text-gray-300 max-w-lg leading-relaxed">
+                We build world-class software solutions that combine stunning design with powerful functionality.
+              </p>
+            </div>
 
-          {/* CTA Buttons - Third Element */}
-          <div className="flex flex-col items-center gap-6 pt-8">
-            <div className="flex flex-col sm:flex-row gap-4 items-center">
-              <button className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/25 flex items-center gap-2">
-                Book a Free Strategy Call
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 items-start">
+              <button className="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-orange-500/25 flex items-center gap-2">
+                Get Started
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </button>
               
-              <button className="group backdrop-blur-sm bg-white/10 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/20 transition-all duration-300 border border-white/20 flex items-center gap-2">
-                See What We Can Build
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+              <button className="group flex items-center gap-3 text-white hover:text-orange-400 transition-colors">
+                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 group-hover:border-orange-400/50 transition-colors">
+                  <Play className="w-5 h-5 ml-1" />
+                </div>
+                <span className="font-medium">Watch our work</span>
               </button>
             </div>
-            
-            {/* Small text below buttons */}
-            <p className="text-gray-400 text-sm max-w-md">
-              No pressure, just expert advice on how to bring your idea to life
-            </p>
-          </div>
 
-          {/* Stats Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-12 max-w-4xl mx-auto">
-            <div className="backdrop-blur-sm bg-white/5 rounded-xl p-4 border border-white/10 hover:border-purple-500/50 transition-all duration-300">
-              <div className="text-2xl font-bold text-white mb-1">4 Weeks</div>
-              <div className="text-gray-300 text-sm">Avg. MVP Delivery</div>
-            </div>
-            <div className="backdrop-blur-sm bg-white/5 rounded-xl p-4 border border-white/10 hover:border-purple-500/50 transition-all duration-300">
-              <div className="text-2xl font-bold text-white mb-1">98%</div>
-              <div className="text-gray-300 text-sm">Client Satisfaction</div>
-            </div>
-            <div className="backdrop-blur-sm bg-white/5 rounded-xl p-4 border border-white/10 hover:border-purple-500/50 transition-all duration-300">
-              <div className="text-2xl font-bold text-white mb-1">50+</div>
-              <div className="text-gray-300 text-sm">Startups Served</div>
-            </div>
-            <div className="backdrop-blur-sm bg-white/5 rounded-xl p-4 border border-white/10 hover:border-purple-500/50 transition-all duration-300">
-              <div className="text-2xl font-bold text-white mb-1">24/7</div>
-              <div className="text-gray-300 text-sm">Support Available</div>
-            </div>
-          </div>
-
-          {/* Trusted by section */}
-          <div className="pt-16">
-            <p className="text-gray-400 text-sm mb-8">Trusted by Leading Teams</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-                            <div className="text-white font-semibold text-lg">Maccam</div>
-              <div className="text-white font-semibold text-lg">Parlux</div>
-              <div className="text-white font-semibold text-lg">United Saloon Supplies</div>
-              <div className="text-white font-semibold text-lg">Instruct</div>
-                            <div className="text-white font-semibold text-lg">PodReel</div>
-              <div className="text-white font-semibold text-lg">DocuQuery</div>
-              <div className="text-white font-semibold text-lg">Shopitomall</div>
-            </div>
-          </div>
-
-          {/* Testimonial */}
-          <div className="pt-12 max-w-2xl mx-auto">
-            <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-6 border border-white/10">
-              <div className="flex justify-center mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                ))}
+            {/* Stats */}
+            <div className="flex gap-8 pt-8">
+              <div>
+                <div className="text-3xl font-bold text-white">50+</div>
+                <div className="text-gray-400 text-sm">Projects Delivered</div>
               </div>
-              <p className="text-white text-lg italic mb-4">
-                "We went from idea to live product in under a month. Dice delivered exactly what we needed — fast."
-              </p>
-              <p className="text-gray-400 text-sm">— Founder, PodReel</p>
+              <div>
+                <div className="text-3xl font-bold text-white">98%</div>
+                <div className="text-gray-400 text-sm">Client Satisfaction</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-white">4 Weeks</div>
+                <div className="text-gray-400 text-sm">Avg. Delivery</div>
+              </div>
             </div>
+          </div>
+
+          {/* Right Visual */}
+          <div className="relative">
+            {/* Main Device Mockup */}
+            <div className="relative z-10">
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 shadow-2xl border border-gray-700">
+                {/* Browser Header */}
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <div className="flex-1 bg-gray-700 rounded ml-4 h-6"></div>
+                </div>
+                
+                {/* Screen Content */}
+                <div className="bg-gradient-to-br from-purple-900 to-blue-900 rounded-lg p-6 h-64">
+                  <div className="space-y-4">
+                    <div className="h-4 bg-white/20 rounded w-3/4"></div>
+                    <div className="h-4 bg-white/20 rounded w-1/2"></div>
+                    <div className="grid grid-cols-2 gap-4 mt-6">
+                      <div className="h-16 bg-orange-500/30 rounded-lg"></div>
+                      <div className="h-16 bg-purple-500/30 rounded-lg"></div>
+                    </div>
+                    <div className="h-20 bg-white/10 rounded-lg mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Floating Elements */}
+            <div className="absolute -top-8 -right-8 w-24 h-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl shadow-lg animate-bounce delay-300 flex items-center justify-center">
+              <Zap className="w-8 h-8 text-white" />
+            </div>
+            
+            <div className="absolute -bottom-8 -left-8 w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl shadow-lg animate-pulse flex items-center justify-center">
+              <Star className="w-6 h-6 text-white" />
+            </div>
+
+            {/* Background Glow */}
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-purple-500/20 rounded-3xl blur-3xl -z-10"></div>
           </div>
 
         </div>
