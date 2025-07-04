@@ -32,7 +32,7 @@ export function Navigation() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-black/80 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
+      isScrolled ? 'bg-black/90 backdrop-blur-md border-b border-gray-800' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -46,31 +46,31 @@ export function Navigation() {
             <div className="ml-10 flex items-baseline space-x-8">
               <button
                 onClick={() => navigateToPage('/')}
-                className="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                className="text-gray-300 hover:text-green-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection('services')}
-                className="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                className="text-gray-300 hover:text-green-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection('projects')}
-                className="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                className="text-gray-300 hover:text-green-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Projects
               </button>
               <button
                 onClick={() => navigateToPage('/about')}
-                className="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                className="text-gray-300 hover:text-green-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                className="text-gray-300 hover:text-green-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Contact
               </button>
@@ -81,7 +81,7 @@ export function Navigation() {
           <div className="hidden md:block">
             <button
               onClick={() => scrollToSection('contact')}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-orange-500/25"
+              className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-green-500/25"
             >
               Get Started
             </button>
@@ -101,42 +101,42 @@ export function Navigation() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-white/10">
+        <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-gray-800">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <button
               onClick={() => navigateToPage('/')}
-              className="text-gray-300 hover:text-orange-400 block px-3 py-2 text-base font-medium w-full text-left"
+              className="text-gray-300 hover:text-green-400 block px-3 py-2 text-base font-medium w-full text-left"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection('services')}
-              className="text-gray-300 hover:text-orange-400 block px-3 py-2 text-base font-medium w-full text-left"
+              className="text-gray-300 hover:text-green-400 block px-3 py-2 text-base font-medium w-full text-left"
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection('projects')}
-              className="text-gray-300 hover:text-orange-400 block px-3 py-2 text-base font-medium w-full text-left"
+              className="text-gray-300 hover:text-green-400 block px-3 py-2 text-base font-medium w-full text-left"
             >
               Projects
             </button>
             <button
               onClick={() => navigateToPage('/about')}
-              className="text-gray-300 hover:text-orange-400 block px-3 py-2 text-base font-medium w-full text-left"
+              className="text-gray-300 hover:text-green-400 block px-3 py-2 text-base font-medium w-full text-left"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="text-gray-300 hover:text-orange-400 block px-3 py-2 text-base font-medium w-full text-left"
+              className="text-gray-300 hover:text-green-400 block px-3 py-2 text-base font-medium w-full text-left"
             >
               Contact
             </button>
             <div className="pt-4 pb-2">
               <button
                 onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-full text-sm font-semibold w-full"
+                className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg text-sm font-semibold w-full"
               >
                 Get Started
               </button>

@@ -1,59 +1,83 @@
 'use client';
 
-import { Code, Zap, Cloud, Cpu, ArrowRight, CheckCircle } from 'lucide-react';
+import { Code, Database, Cloud, Smartphone } from 'lucide-react';
 
 export function TechStackSection() {
   const technologies = [
-    { name: 'HTML5', icon: '🌐' },
-    { name: 'CSS3', icon: '🎨' },
-    { name: 'JavaScript', icon: '⚡' },
-    { name: 'React', icon: '⚛️' },
-    { name: 'Node.js', icon: '🟢' },
-    { name: 'Python', icon: '🐍' },
-    { name: 'MongoDB', icon: '🍃' },
-    { name: 'PostgreSQL', icon: '🐘' },
-    { name: 'AWS', icon: '☁️' },
-    { name: 'Docker', icon: '🐳' },
-    { name: 'Git', icon: '📝' },
-    { name: 'Figma', icon: '🎯' }
+    { name: 'React', category: 'Frontend' },
+    { name: 'Node.js', category: 'Backend' },
+    { name: 'Python', category: 'Backend' },
+    { name: 'PostgreSQL', category: 'Database' },
+    { name: 'MongoDB', category: 'Database' },
+    { name: 'AWS', category: 'Cloud' },
+    { name: 'Docker', category: 'DevOps' },
+    { name: 'TypeScript', category: 'Language' }
   ];
 
   return (
     <section className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            We Build With{' '}
-            <span className="text-orange-400">Modern Stack</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Deep Expertise In{' '}
+            <span className="text-green-400">Cutting Edge</span>
             <br />
-            <span className="text-orange-400">&</span> Technologies.
+            Software Solutions
           </h2>
           
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Using cutting-edge technologies to deliver exceptional results
+            We leverage the latest technologies to build scalable, secure, and high-performance applications
           </p>
         </div>
 
+        {/* Technology Categories */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="text-center">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-green-500/20 border border-green-500/30 mb-4">
+              <Code className="w-8 h-8 text-green-400" />
+            </div>
+            <h3 className="text-white font-bold text-lg mb-2">Frontend</h3>
+            <p className="text-gray-400 text-sm">Modern UI frameworks</p>
+          </div>
+          
+          <div className="text-center">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-green-500/20 border border-green-500/30 mb-4">
+              <Database className="w-8 h-8 text-green-400" />
+            </div>
+            <h3 className="text-white font-bold text-lg mb-2">Backend</h3>
+            <p className="text-gray-400 text-sm">Scalable server solutions</p>
+          </div>
+          
+          <div className="text-center">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-green-500/20 border border-green-500/30 mb-4">
+              <Cloud className="w-8 h-8 text-green-400" />
+            </div>
+            <h3 className="text-white font-bold text-lg mb-2">Cloud</h3>
+            <p className="text-gray-400 text-sm">Enterprise cloud platforms</p>
+          </div>
+          
+          <div className="text-center">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-green-500/20 border border-green-500/30 mb-4">
+              <Smartphone className="w-8 h-8 text-green-400" />
+            </div>
+            <h3 className="text-white font-bold text-lg mb-2">Mobile</h3>
+            <p className="text-gray-400 text-sm">Cross-platform development</p>
+          </div>
+        </div>
+
         {/* Technology Grid */}
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
           {technologies.map((tech, index) => (
             <div
               key={index}
-              className="group backdrop-blur-sm bg-gray-800/50 rounded-xl p-6 border border-gray-700 hover:border-orange-500/50 transition-all duration-300 hover:scale-105 text-center"
+              className="bg-gray-800/50 rounded-lg p-4 border border-gray-700 hover:border-green-500/50 transition-all duration-300 text-center"
             >
-              <div className="text-3xl mb-3">{tech.icon}</div>
-              <div className="text-gray-300 text-sm font-medium">{tech.name}</div>
+              <div className="text-white font-medium text-sm mb-1">{tech.name}</div>
+              <div className="text-gray-400 text-xs">{tech.category}</div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <button className="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-orange-500/25 flex items-center gap-2 mx-auto">
-            Start Your Project
-            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-          </button>
         </div>
       </div>
     </section>

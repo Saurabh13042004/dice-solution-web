@@ -1,124 +1,117 @@
 'use client';
 
-import { ArrowRight, Star, Zap, Play } from 'lucide-react';
+import { ArrowRight, Star, Play, CheckCircle } from 'lucide-react';
 
 export function HeroSection() {
   return (
     <section className="pt-32 pb-24 relative overflow-hidden min-h-screen flex items-center">
-      {/* Background with gradients */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-purple-900/20"></div>
+      {/* Background with dark theme */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
       
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+      {/* Subtle grid pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0)`,
+          backgroundSize: '20px 20px'
+        }}></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
           {/* Left Content */}
           <div className="space-y-8">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-orange-500/20 backdrop-blur-sm rounded-full border border-orange-500/30">
-              <Zap className="w-5 h-5 text-orange-400" />
-              <span className="text-white font-medium">
-                Development that performs
-              </span>
+            {/* Rating Badge */}
+            <div className="flex items-center gap-4 mb-6">
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <span className="text-gray-300 text-sm">Rated 4.9/5 by 50+ clients</span>
             </div>
 
             {/* Main Headline */}
             <div className="space-y-6">
               <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
-                Designs that{' '}
-                <span className="text-orange-400">speaks,</span>
-                <br />
-                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Development
+                Best Software Solution To{' '}
+                <span className="text-green-400">
+                  The Drive Business Forward
                 </span>
-                <br />
-                that performs
               </h1>
               
               <p className="text-xl text-gray-300 max-w-lg leading-relaxed">
-                We build world-class software solutions that combine stunning design with powerful functionality.
+                We build world-class software solutions that combine stunning design with powerful functionality to drive your business forward.
               </p>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 items-start">
-              <button className="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-orange-500/25 flex items-center gap-2">
-                Get Started
+              <button className="group bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-green-500/25 flex items-center gap-2">
+                Get Started Now
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </button>
               
-              <button className="group flex items-center gap-3 text-white hover:text-orange-400 transition-colors">
-                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 group-hover:border-orange-400/50 transition-colors">
+              <button className="group flex items-center gap-3 text-white hover:text-green-400 transition-colors">
+                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center border border-white/20 group-hover:border-green-400/50 transition-colors">
                   <Play className="w-5 h-5 ml-1" />
                 </div>
-                <span className="font-medium">Watch our work</span>
+                <span className="font-medium">Watch Demo</span>
               </button>
             </div>
 
-            {/* Stats */}
-            <div className="flex gap-8 pt-8">
-              <div>
-                <div className="text-3xl font-bold text-white">50+</div>
-                <div className="text-gray-400 text-sm">Projects Delivered</div>
+            {/* Trust Indicators */}
+            <div className="flex items-center gap-8 pt-8">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                <span className="text-gray-300">Free Consultation</span>
               </div>
-              <div>
-                <div className="text-3xl font-bold text-white">98%</div>
-                <div className="text-gray-400 text-sm">Client Satisfaction</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-white">4 Weeks</div>
-                <div className="text-gray-400 text-sm">Avg. Delivery</div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                <span className="text-gray-300">24/7 Support</span>
               </div>
             </div>
           </div>
 
-          {/* Right Visual */}
+          {/* Right Visual - Team Photo */}
           <div className="relative">
-            {/* Main Device Mockup */}
-            <div className="relative z-10">
-              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 shadow-2xl border border-gray-700">
-                {/* Browser Header */}
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <div className="flex-1 bg-gray-700 rounded ml-4 h-6"></div>
-                </div>
-                
-                {/* Screen Content */}
-                <div className="bg-gradient-to-br from-purple-900 to-blue-900 rounded-lg p-6 h-64">
-                  <div className="space-y-4">
-                    <div className="h-4 bg-white/20 rounded w-3/4"></div>
-                    <div className="h-4 bg-white/20 rounded w-1/2"></div>
-                    <div className="grid grid-cols-2 gap-4 mt-6">
-                      <div className="h-16 bg-orange-500/30 rounded-lg"></div>
-                      <div className="h-16 bg-purple-500/30 rounded-lg"></div>
-                    </div>
-                    <div className="h-20 bg-white/10 rounded-lg mt-4"></div>
-                  </div>
-                </div>
-              </div>
+            {/* Main Team Image */}
+            <div className="relative z-10 rounded-2xl overflow-hidden">
+              <img 
+                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                alt="Our development team"
+                className="w-full h-96 object-cover rounded-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
             </div>
 
-            {/* Floating Elements */}
-            <div className="absolute -top-8 -right-8 w-24 h-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl shadow-lg animate-bounce delay-300 flex items-center justify-center">
-              <Zap className="w-8 h-8 text-white" />
+            {/* Floating Stats */}
+            <div className="absolute -bottom-8 -left-8 bg-gray-800/90 backdrop-blur-sm rounded-xl p-4 border border-gray-700">
+              <div className="text-2xl font-bold text-white">25+</div>
+              <div className="text-gray-400 text-sm">Projects Completed</div>
             </div>
             
-            <div className="absolute -bottom-8 -left-8 w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl shadow-lg animate-pulse flex items-center justify-center">
-              <Star className="w-6 h-6 text-white" />
+            <div className="absolute -top-8 -right-8 bg-green-500 rounded-xl p-4 shadow-lg">
+              <div className="text-white font-bold">98%</div>
+              <div className="text-white text-sm">Success Rate</div>
             </div>
 
             {/* Background Glow */}
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-purple-500/20 rounded-3xl blur-3xl -z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 to-blue-500/20 rounded-3xl blur-3xl -z-10"></div>
           </div>
 
+        </div>
+
+        {/* Client Logos */}
+        <div className="mt-20 pt-12 border-t border-gray-800">
+          <p className="text-gray-400 text-center mb-8">Trusted by leading companies</p>
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+            <div className="text-white font-semibold text-lg">Maccam</div>
+            <div className="text-white font-semibold text-lg">Parlux</div>
+            <div className="text-white font-semibold text-lg">United Saloon</div>
+            <div className="text-white font-semibold text-lg">Instruct</div>
+            <div className="text-white font-semibold text-lg">PodReel</div>
+          </div>
         </div>
       </div>
     </section>
