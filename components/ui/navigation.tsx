@@ -37,8 +37,8 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0 cursor-pointer" onClick={() => navigateToPage('/')}>
-            <Logo variant="white" size="lg" />
+          <div className="flex-shrink-0 cursor-pointer pt-4" onClick={() => navigateToPage('/')}>
+            <img src='/1-removebg-preview.png' alt='Logo' className="h-auto w-80" />
           </div>
 
           {/* Desktop Navigation */}
