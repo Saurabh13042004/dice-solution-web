@@ -11,6 +11,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Dice Solutions - Launch MVPs, SaaS & AI Products Fast',
   description: 'We build production-ready apps, landing pages, and CMS-powered platforms using cutting-edge technologies — with speed, scalability, and startup-style execution.',
+  icons: {
+    icon: '/dice-solutions.png'
+  }
 };
 
 export default function RootLayout({
