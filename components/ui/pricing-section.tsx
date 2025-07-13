@@ -242,13 +242,13 @@ export function PricingSection() {
               Download our Free MVP Planning Guide (PDF) — and we'll include a discount code inside 😉
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href='/DICE1.pdf' target='_blank' download>
+              <a href='/DICE.pdf' target='_blank' download>
               <button className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-all duration-300 flex items-center gap-2 justify-center">
                 Download Free Guide
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
               </button>
               </a>
-              <a href={`https://calendly.com/dicesolutionsofficial/30min`} target='_blank'>
+              <a href={`https://calendly.com/d/cv6x-6ts-rqy/schedule-a-meeting-now`} target='_blank'>
               <button className="group backdrop-blur-sm bg-white/10 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 border border-white/20 flex items-center gap-2 justify-center">
                 Book Strategy Call
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />

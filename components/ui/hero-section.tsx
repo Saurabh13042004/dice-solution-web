@@ -46,7 +46,7 @@ export function HeroSection() {
           {/* CTA Buttons - Third Element */}
           <div className="flex flex-col items-center gap-6 pt-8">
             <div className="flex flex-col sm:flex-row gap-4 items-center">
-              <a href={`https://calendly.com/dicesolutionsofficial/30min`} target='_blank'>
+              <a href={`https://calendly.com/d/cv6x-6ts-rqy/schedule-a-meeting-now`} target='_blank'>
               <button className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/25 flex items-center gap-2">
                 Book a Free Strategy Call
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />

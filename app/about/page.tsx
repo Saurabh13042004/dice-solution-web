@@ -348,7 +348,7 @@ export default function AboutPage() {
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-16">
             Let's turn your vision into a real, working product — fast.
           </p>
-          <a href={`https://calendly.com/dicesolutionsofficial/30min`} target='_blank'>
+          <a href={`https://calendly.com/d/cv6x-6ts-rqy/schedule-a-meeting-now`} target='_blank'>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-10 py-5 rounded-full text-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/25 flex items-center gap-3">
               <Phone className="w-6 h-6" />
