@@ -34,7 +34,7 @@ export function Footer() {
               <Link href="#contact" className="block text-gray-300 hover:text-purple-300 transition-colors">
                 Contact
               </Link>
-              <Link href={`https://calendly.com/dicesolutionsofficial/30min`} target='_blank' className="text-gray-300 hover:text-purple-300 transition-colors">
+              <Link href={`https://calendly.com/d/cv6x-6ts-rqy/schedule-a-meeting-now`} target='_blank' className="text-gray-300 hover:text-purple-300 transition-colors">
                 Book a Call
               </Link>
             </div>
