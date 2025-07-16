@@ -56,10 +56,10 @@ export function PricingSection() {
           <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105">
             <div className="flex items-center gap-2 mb-4">
               <Zap className="w-6 h-6 text-yellow-400" />
-              <h3 className="text-xl font-bold text-white">Idea Kickstart</h3>
+              <h3 className="text-3xl font-bold text-white">Idea Kickstart</h3>
             </div>
             <div className="mb-6">
-              <span className="text-3xl font-bold text-white">₹39,000</span>
+              {/* <span className="text-3xl font-bold text-white">₹39,000</span> */}
               <p className="text-gray-400 mt-2">Perfect for idea validation</p>
             </div>
             <ul className="space-y-3 mb-8">
@@ -94,10 +94,10 @@ export function PricingSection() {
           <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-6 h-6 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full"></div>
-              <h3 className="text-xl font-bold text-white">Starter MVP</h3>
+              <h3 className="text-3xl font-bold text-white">Starter MVP</h3>
             </div>
             <div className="mb-6">
-              <span className="text-3xl font-bold text-white">₹99,000</span>
+              {/* <span className="text-3xl font-bold text-white">₹99,000</span> */}
               <p className="text-gray-400 mt-2">Launch-ready MVP</p>
             </div>
             <ul className="space-y-3 mb-8">
@@ -137,10 +137,10 @@ export function PricingSection() {
             </div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-6 h-6 bg-gradient-to-r from-blue-400 to-teal-400 rounded-full"></div>
-              <h3 className="text-xl font-bold text-white">Pro Scale</h3>
+              <h3 className="text-3xl font-bold text-white">Pro Scale</h3>
             </div>
             <div className="mb-6">
-              <span className="text-3xl font-bold text-white">₹1,49,000</span>
+              {/* <span className="text-3xl font-bold text-white">₹1,49,000</span> */}
               <p className="text-gray-400 mt-2">Production-ready platform</p>
             </div>
             <ul className="space-y-3 mb-8">
@@ -175,10 +175,10 @@ export function PricingSection() {
           <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-yellow-400 rounded-full"></div>
-              <h3 className="text-xl font-bold text-white">Custom Build</h3>
+              <h3 className="text-3xl font-bold text-white">Custom-Fit</h3>
             </div>
             <div className="mb-6">
-              <span className="text-3xl font-bold text-white">Let's Talk</span>
+              {/* <span className="text-3xl font-bold text-white">Let's Talk</span> */}
               <p className="text-gray-400 mt-2">Tailored to your needs</p>
             </div>
             <ul className="space-y-3 mb-8">
@@ -212,7 +212,7 @@ export function PricingSection() {
 
         {/* Why These Prices Section */}
         <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 md:p-12 border border-white/10 mb-12">
-          <h3 className="text-3xl font-bold text-white mb-6 text-center">Why These Prices?</h3>
+          <h3 className="text-3xl font-bold text-white mb-6 text-center">Why Choose us?</h3>
           <p className="text-xl text-gray-300 leading-relaxed text-center max-w-4xl mx-auto mb-8">
             We don't just build code. We deliver launch-ready, scalable products using the same tools top startups use. 
             Hiring a full-time team costs 5x more — we help you validate your idea for a fraction of that cost.
