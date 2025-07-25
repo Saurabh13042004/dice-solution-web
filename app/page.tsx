@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/ui/navigation';
 import { HeroSection } from '@/components/ui/hero-section';
-import { ServicesSection } from '@/components/ui/services-section';
+import { WhatWeBuildSection } from '@/components/ui/what-we-build-section';
+import { WhyDiceSection } from '@/components/ui/why-dice-section';
 import { ProductsSection } from '@/components/ui/products-section';
 import { TechStackSection } from '@/components/ui/tech-stack-section';
 import { ProcessSection } from '@/components/ui/process-section';
@@ -12,7 +13,8 @@ export default function Home() {
     <main className="min-h-screen bg-black">
       <Navigation />
       <HeroSection />
-      <ServicesSection />
+      <WhatWeBuildSection />
+      <WhyDiceSection />
       <ProductsSection />
       <TechStackSection />
       <ProcessSection />

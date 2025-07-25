@@ -1,6 +1,6 @@
 'use client';
 
-import { Check, ArrowRight, Zap, Gift } from 'lucide-react';
+import { Check, ArrowRight, Zap, Gift, Rocket, Star, Brain } from 'lucide-react';
 
 export function PricingSection() {
   return (
@@ -11,7 +11,7 @@ export function PricingSection() {
         {/* Value Comparison */}
         <div className="text-center mb-16">
           <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 border border-white/10 max-w-4xl mx-auto mb-12">
-            <h3 className="text-2xl font-bold text-white mb-6">Before & After</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">Founder-Friendly Pricing</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="text-center">
                 <div className="text-red-400 text-4xl mb-4">❌</div>
@@ -21,18 +21,18 @@ export function PricingSection() {
                   <li>• 3+ months to build</li>
                   <li>• Recruitment hassle</li>
                   <li>• Management overhead</li>
-                  <li>• No guarantee of quality</li>
+                  <li>• No AI integration expertise</li>
                 </ul>
               </div>
               <div className="text-center">
                 <div className="text-green-400 text-4xl mb-4">✅</div>
                 <h4 className="text-xl font-semibold text-white mb-2">Working with Dice</h4>
-                <p className="text-green-400 mb-4">₹99K + 4-week MVP</p>
+                <p className="text-green-400 mb-4">₹99K + 4-week AI-powered MVP</p>
                 <ul className="text-gray-300 text-sm space-y-2">
                   <li>• Launch-ready in 4 weeks</li>
                   <li>• Experienced startup team</li>
-                  <li>• Proven tech stack</li>
-                  <li>• Ongoing support included</li>
+                  <li>• AI-first development approach</li>
+                  <li>• Continuous growth support</li>
                 </ul>
               </div>
             </div>
@@ -47,37 +47,37 @@ export function PricingSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            From idea validation to full-scale MVP — we've got the right plan for your startup journey.
+            From idea validation to AI-powered enterprise solutions — we've got the right plan for your startup journey.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {/* Idea Kickstart Plan */}
-          <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105">
+          <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-yellow-500/50 transition-all duration-300 hover:scale-105">
             <div className="flex items-center gap-2 mb-4">
               <Zap className="w-6 h-6 text-yellow-400" />
-              <h3 className="text-3xl font-bold text-white">Idea Kickstart</h3>
+              <h3 className="text-2xl font-bold text-white">Idea Kickstart</h3>
             </div>
             <div className="mb-6">
-              {/* <span className="text-3xl font-bold text-white">₹39,000</span> */}
+              <span className="text-3xl font-bold text-white">₹39,000</span>
               <p className="text-gray-400 mt-2">Perfect for idea validation</p>
             </div>
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">1-page landing site</span>
+                <span className="text-gray-300">AI-optimized landing page</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Lead capture & waitlist</span>
+                <span className="text-gray-300">Smart lead capture & waitlist</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Feedback form</span>
+                <span className="text-gray-300">AI-powered feedback analysis</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">1 core feature</span>
+                <span className="text-gray-300">1 core feature with analytics</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
@@ -93,29 +93,29 @@ export function PricingSection() {
           {/* Starter MVP */}
           <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-6 h-6 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full"></div>
-              <h3 className="text-3xl font-bold text-white">Starter MVP</h3>
+              <Rocket className="w-6 h-6 text-purple-400" />
+              <h3 className="text-2xl font-bold text-white">Starter MVP</h3>
             </div>
             <div className="mb-6">
-              {/* <span className="text-3xl font-bold text-white">₹99,000</span> */}
-              <p className="text-gray-400 mt-2">Launch-ready MVP</p>
+              <span className="text-3xl font-bold text-white">₹99,000</span>
+              <p className="text-gray-400 mt-2">AI-integrated launch-ready MVP</p>
             </div>
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Full-stack web app</span>
+                <span className="text-gray-300">Full-stack web app with AI features</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">User authentication</span>
+                <span className="text-gray-300">Smart user authentication</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Database setup</span>
+                <span className="text-gray-300">AI-powered database optimization</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">3-5 core features</span>
+                <span className="text-gray-300">3-5 core features + AI insights</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
@@ -123,88 +123,89 @@ export function PricingSection() {
               </li>
             </ul>
             <button className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-3 rounded-full font-semibold hover:scale-105 transition-all duration-300 mb-3">
-              Build My MVP
+              Build My AI-Powered MVP
             </button>
             <p className="text-xs text-gray-400 text-center">EMI or phased payment options available</p>
           </div>
 
           {/* Pro Plan */}
-          <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 border border-purple-500/50 hover:border-purple-400 transition-all duration-300 hover:scale-105 relative">
+          <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 border border-blue-500/50 hover:border-blue-400 transition-all duration-300 hover:scale-105 relative">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+              <span className="bg-gradient-to-r from-blue-500 to-teal-500 text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+                <Star className="w-4 h-4" />
                 Most Popular
               </span>
             </div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-6 h-6 bg-gradient-to-r from-blue-400 to-teal-400 rounded-full"></div>
-              <h3 className="text-3xl font-bold text-white">Pro Scale</h3>
+              <Brain className="w-6 h-6 text-blue-400" />
+              <h3 className="text-2xl font-bold text-white">Pro Scale</h3>
             </div>
             <div className="mb-6">
-              {/* <span className="text-3xl font-bold text-white">₹1,49,000</span> */}
-              <p className="text-gray-400 mt-2">Production-ready platform</p>
+              <span className="text-3xl font-bold text-white">₹1,49,000</span>
+              <p className="text-gray-400 mt-2">AI-enhanced production platform</p>
             </div>
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Everything in Starter</span>
+                <span className="text-gray-300">Everything in Starter + AI automation</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Advanced features</span>
+                <span className="text-gray-300">Advanced AI features & chatbots</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Payment integration</span>
+                <span className="text-gray-300">Smart payment integration</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Admin dashboard</span>
+                <span className="text-gray-300">AI-powered admin dashboard</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">6-week delivery</span>
+                <span className="text-gray-300">6-week delivery + ongoing AI optimization</span>
               </li>
             </ul>
             <button className="w-full bg-gradient-to-r from-blue-500 to-teal-500 text-white py-3 rounded-full font-semibold hover:scale-105 transition-all duration-300 mb-3">
-              Scale My Startup
+              Scale My Startup with AI
             </button>
             <p className="text-xs text-gray-400 text-center">EMI or phased payment options available</p>
           </div>
 
           {/* Custom Plan */}
-          <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:scale-105">
+          <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-green-500/50 transition-all duration-300 hover:scale-105">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-yellow-400 rounded-full"></div>
-              <h3 className="text-3xl font-bold text-white">Custom-Fit</h3>
+              <h3 className="text-2xl font-bold text-white">Custom Enterprise</h3>
             </div>
             <div className="mb-6">
-              {/* <span className="text-3xl font-bold text-white">Let's Talk</span> */}
-              <p className="text-gray-400 mt-2">Tailored to your needs</p>
+              <span className="text-3xl font-bold text-white">Let's Talk</span>
+              <p className="text-gray-400 mt-2">Tailored AI solutions</p>
             </div>
             <ul className="space-y-3 mb-8">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Complex integrations</span>
+                <span className="text-gray-300">Complex AI/ML integrations</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">AI/ML features</span>
+                <span className="text-gray-300">Custom AI model training</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Enterprise features</span>
+                <span className="text-gray-300">Enterprise-grade security</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Dedicated support</span>
+                <span className="text-gray-300">Dedicated AI engineering team</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Timeline: TBD</span>
+                <span className="text-gray-300">Timeline: Based on complexity</span>
               </li>
             </ul>
             <button className="w-full backdrop-blur-sm bg-white/10 text-white py-3 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 border border-white/20 mb-3">
-              Discuss Project
+              Discuss AI Project
             </button>
             <p className="text-xs text-gray-400 text-center">Flexible payment terms</p>
           </div>
@@ -212,23 +213,23 @@ export function PricingSection() {
 
         {/* Why These Prices Section */}
         <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-8 md:p-12 border border-white/10 mb-12">
-          <h3 className="text-3xl font-bold text-white mb-6 text-center">Why Choose us?</h3>
+          <h3 className="text-3xl font-bold text-white mb-6 text-center">Why Choose AI-Powered Development?</h3>
           <p className="text-xl text-gray-300 leading-relaxed text-center max-w-4xl mx-auto mb-8">
-            We don't just build code. We deliver launch-ready, scalable products using the same tools top startups use. 
-            Hiring a full-time team costs 5x more — we help you validate your idea for a fraction of that cost.
+            We don't just build code. We deliver AI-integrated, launch-ready, scalable products using cutting-edge technology. 
+            Hiring a full-time team costs 5x more — we help you validate and scale your AI-powered idea for a fraction of that cost.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-2xl font-bold text-purple-400 mb-2">5x Cheaper</div>
-              <p className="text-gray-300">Than hiring a full dev team</p>
+              <p className="text-gray-300">Than hiring a full AI dev team</p>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-blue-400 mb-2">4 Weeks</div>
-              <p className="text-gray-300">Average MVP delivery time</p>
+              <div className="text-2xl font-bold text-blue-400 mb-2">AI-First</div>
+              <p className="text-gray-300">Every product built with intelligence</p>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-green-400 mb-2">Production Ready</div>
-              <p className="text-gray-300">Not just prototypes</p>
+              <div className="text-2xl font-bold text-green-400 mb-2">Future-Ready</div>
+              <p className="text-gray-300">Scalable & continuously evolving</p>
             </div>
           </div>
         </div>
@@ -239,20 +240,20 @@ export function PricingSection() {
             <Gift className="w-12 h-12 text-purple-400 mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-white mb-4">Not Ready to Build Yet?</h3>
             <p className="text-gray-300 mb-6">
-              Download our Free MVP Planning Guide (PDF) — and we'll include a discount code inside 😉
+              Download our Free AI-Powered MVP Planning Guide (PDF) — and we'll include a special discount code inside 😉
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href='/DICE.pdf' target='_blank' download>
-              <button className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-all duration-300 flex items-center gap-2 justify-center">
-                Download Free Guide
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
-              </button>
+                <button className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition-all duration-300 flex items-center gap-2 justify-center">
+                  Download Free AI Guide
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
+                </button>
               </a>
               <a href={`https://calendly.com/d/cv6x-6ts-rqy/schedule-a-meeting-now`} target='_blank'>
-              <button className="group backdrop-blur-sm bg-white/10 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 border border-white/20 flex items-center gap-2 justify-center">
-                Book Strategy Call
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
-              </button>
+                <button className="group backdrop-blur-sm bg-white/10 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 border border-white/20 flex items-center gap-2 justify-center">
+                  Book Strategy Call
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
+                </button>
               </a>
             </div>
           </div>

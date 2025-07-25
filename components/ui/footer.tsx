@@ -17,8 +17,8 @@ export function Footer() {
               <Logo variant="white" size="xl" />
             </h3>
             <p className="text-gray-300 leading-relaxed max-w-md">
-              We help founders, startups, and businesses launch faster, grow smarter,
-              and scale effortlessly with cutting-edge technology solutions.
+              AI-powered product engineering agency built by ex-startup engineers. 
+              We help founders launch faster, build smarter, and scale effortlessly with intelligent technology solutions.
             </p>
           </div>
 
@@ -27,6 +27,9 @@ export function Footer() {
             <div className="space-y-2">
               <Link href="/" className="block text-gray-300 hover:text-purple-300 transition-colors">
                 Home
+              </Link>
+              <Link href="#what-we-build" className="block text-gray-300 hover:text-purple-300 transition-colors">
+                What We Build
               </Link>
               <Link href="/about" className="block text-gray-300 hover:text-purple-300 transition-colors">
                 About Us

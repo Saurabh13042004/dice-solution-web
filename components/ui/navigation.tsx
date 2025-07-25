@@ -51,10 +51,10 @@ export function Navigation() {
                 Home
               </button>
               <button
-                onClick={() => scrollToSection('services')}
+                onClick={() => scrollToSection('what-we-build')}
                 className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
-                Services
+                What We Build
               </button>
               <button
                 onClick={() => scrollToSection('products')}
@@ -116,10 +116,10 @@ export function Navigation() {
               Home
             </button>
             <button
-              onClick={() => scrollToSection('services')}
+              onClick={() => scrollToSection('what-we-build')}
               className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium w-full text-left"
             >
-              Services
+              What We Build
             </button>
             <button
               onClick={() => scrollToSection('products')}
