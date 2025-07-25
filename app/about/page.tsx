@@ -37,7 +37,7 @@ export default function AboutPage() {
       
       {/* Hero Section */}
       <section id="hero" className="pt-40 pb-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-blue-900 to-teal-900"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-br bg-black"></div> */}
         
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
