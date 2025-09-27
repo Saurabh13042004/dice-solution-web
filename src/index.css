@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Codacy-inspired minimalist design system */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 98%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 210 20% 98%;
+    --muted-foreground: 215 25% 45%;
+
+    --accent: 213 94% 68%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 0 0% 0%;
+
+    /* Custom design tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
+    --card-shadow: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px 0 hsl(0 0% 0% / 0.06);
+    --card-shadow-hover: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 3%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 3%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 213 94% 68%;
+    --accent-foreground: 0 0% 3%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 98%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Hero-inspired typography system - elegant and minimal */
+  h1 {
+    @apply font-extralight tracking-tight leading-[1.05] text-5xl sm:text-6xl md:text-7xl;
+  }
+  
+  h2 {
+    @apply font-extralight tracking-tight leading-tight text-3xl sm:text-4xl md:text-5xl;
+  }
+  
+  h3 {
+    @apply font-light tracking-tight leading-tight text-xl sm:text-2xl md:text-3xl;
+  }
+  
+  h4 {
+    @apply font-light tracking-tight leading-tight text-lg sm:text-xl;
+  }
+  
+  h5 {
+    @apply font-light tracking-tight leading-tight text-base sm:text-lg;
+  }
+  
+  h6 {
+    @apply font-light tracking-tight leading-tight text-sm sm:text-base;
+  }
+  
+  p {
+    @apply font-light leading-relaxed tracking-tight text-muted-foreground;
+  }
+  
+  /* Utility classes for consistent typography */
+  .text-hero {
+    @apply font-extralight tracking-tight leading-[1.05];
+  }
+  
+  .text-heading {
+    @apply font-extralight tracking-tight leading-tight;
+  }
+  
+  .text-body {
+    @apply font-light leading-relaxed tracking-tight text-muted-foreground;
+  }
+  
+  .text-label {
+    @apply font-light tracking-tight text-muted-foreground;
+  }
+  
+  .text-micro {
+    @apply font-light tracking-tight text-xs text-muted-foreground;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+  
+  .card-hover {
+    transition: var(--transition-smooth);
+    box-shadow: var(--card-shadow);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--card-shadow-hover);
+  }
+  
+  .section-padding {
+    @apply py-20 md:py-28 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding-large {
+    @apply py-24 md:py-32 lg:py-40 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-width {
+    @apply max-w-7xl mx-auto;
+  }
+}
