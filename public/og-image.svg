@@ -1,0 +1,37 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- DICE Logo (dots pattern) -->
+  <g transform="translate(80, 280)">
+    <circle cx="0" cy="0" r="8" fill="#3B82F6"/>
+    <circle cx="24" cy="0" r="8" fill="#10B981"/>
+    <circle cx="48" cy="0" r="8" fill="#8B5CF6"/>
+    <circle cx="72" cy="0" r="8" fill="#F59E0B"/>
+    <circle cx="0" cy="24" r="8" fill="#EF4444"/>
+    <circle cx="24" cy="24" r="8" fill="#F59E0B"/>
+    <circle cx="48" cy="24" r="8" fill="#EC4899"/>
+    <circle cx="72" cy="24" r="8" fill="#6366F1"/>
+  </g>
+  
+  <!-- DICE Text -->
+  <text x="200" y="315" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="white">DICE</text>
+  
+  <!-- Main Heading -->
+  <text x="80" y="180" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="white">Enterprise-Grade Security for</text>
+  <text x="80" y="240" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="white">Modern Software Development</text>
+  
+  <!-- Subtitle -->
+  <text x="80" y="380" font-family="Inter, sans-serif" font-size="20" font-weight="400" fill="rgba(255,255,255,0.9)">Build secure, compliant and maintainable software, from IDE to Runtime.</text>
+  
+  <!-- Website URL -->
+  <text x="80" y="450" font-family="Inter, sans-serif" font-size="18" font-weight="500" fill="rgba(255,255,255,0.8)">dicesolutions.com</text>
+</svg>
